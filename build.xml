@@ -24,6 +24,7 @@
 	<!-- Deletes the existing build, docs and dist directory-->
 	<target name="clean">
 		<delete dir="${build.dir}" />
+		<delete dir="${build.test.dir}" />
 		<delete dir="${test.report.dir}" />
 	</target>
 
@@ -70,7 +71,7 @@
    <classes dir = "${build.dir}"/>
 	</war>
 	</target>
-	<target name="main" depends="compile, junit, package">
+	<target name="main" depends="junit, package">
 		<description>Main target</description>
 	</target>
 
