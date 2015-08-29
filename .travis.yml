@@ -1,3 +1,2 @@
 language: java 
-script: mvn heroku:deploy-war
-
+script: ant main
