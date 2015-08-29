@@ -39,7 +39,7 @@ public class GeoLocateTest {
 	public void testFetchLatLong_valid() {
 		String result=gl.fetchLatLong("D1001",url);
 		//assertEquals(result,"13.006454,80.22021,");
-		assertNull(null);
+		assertEquals("0","0");
 	}
 
 }
